@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/detailTeam"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/itemDetailTeam.label"
+                android:text="@string/nome_" />
+
+            <TextView
+                android:id="@+id/teamName"
+                style="@style/itemDetailTeam" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/detailTeam"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/itemDetailTeam.label"
+                android:text="@string/sigla_" />
+
+            <TextView
+                android:id="@+id/teamSigla"
+                style="@style/itemDetailTeam" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/detailTeam"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/itemDetailTeam.label"
+                android:text="@string/numero_de_jogadores_" />
+
+            <TextView
+                android:id="@+id/numberPlayers"
+                style="@style/itemDetailTeam" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/headerPlayerList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/itemHeaderPlayerList"
+                android:text="Jogador" />
+
+            <TextView
+                style="@style/itemHeaderPlayerList"
+                android:text="Posição" />
+
+            <TextView
+                style="@style/itemHeaderPlayerList"
+                android:text="Número" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listPlayers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

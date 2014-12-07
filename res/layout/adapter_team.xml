@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/adItem" >
+
+    <TextView
+        android:id="@+id/txtName"
+        style="@style/adItem_txt.Name"
+        android:text="@string/time" />
+
+    <TextView
+        android:id="@+id/txtSigla"
+        style="@style/adItem_txt.Sigla"
+        android:text="@string/sigla" />
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/adItem" >
+
+    <TextView
+        android:id="@+id/txtName"
+        style="@style/adItem_txt.Name"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:text="@string/jo_o" />
+
+    <TextView
+        android:id="@+id/txtPosition"
+        style="@style/adItem_txt.Sigla"
+        android:text="@string/goleiro" />
+
+    <TextView
+        android:id="@+id/txtNumber"
+        style="@style/adItem_txt.Sigla"
+        android:text="@string/_1" />
+
+</LinearLayout>
