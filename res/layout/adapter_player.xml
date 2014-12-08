@@ -4,18 +4,20 @@
 
     <TextView
         android:id="@+id/txtName"
-        style="@style/adItem_txt.Name"
-        android:layout_weight="2"
-        android:layout_width="0dp"
+        style="@style/adItem_txt.Name" 
+        android:layout_weight="2.5"
         android:text="@string/jo_o" />
 
     <TextView
         android:id="@+id/txtPosition"
         style="@style/adItem_txt.Sigla"
+        android:layout_weight="0.75"
         android:text="@string/goleiro" />
 
     <TextView
         android:id="@+id/txtNumber"
+        android:layout_weight="0.75"
+        android:gravity="right"
         style="@style/adItem_txt.Sigla"
         android:text="@string/_1" />
 

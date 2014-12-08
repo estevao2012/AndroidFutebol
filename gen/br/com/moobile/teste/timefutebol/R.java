@@ -1580,8 +1580,9 @@ containing a value of this type.
         public static final int dialog_fixed_width_minor=0x7f08000d;
         public static final int disabled_alpha_material_dark=0x7f080001;
         public static final int disabled_alpha_material_light=0x7f080000;
+        public static final int margin_header_adapter=0x7f080030;
         public static final int margin_item_adapter=0x7f08002f;
-        public static final int margin_item_detail=0x7f080030;
+        public static final int margin_item_detail=0x7f080031;
         public static final int margin_item_menu=0x7f08002e;
         /** 
          Per the design guidelines, navigation drawers should be between 240dp and 320dp:
@@ -1679,6 +1680,7 @@ containing a value of this type.
         public static final int drawer_layout=0x7f050041;
         public static final int dropdown=0x7f050011;
         public static final int edit_query=0x7f050035;
+        public static final int emptyView=0x7f05004a;
         public static final int end=0x7f050014;
         public static final int expand_activities_button=0x7f050024;
         public static final int expanded_menu=0x7f05002a;
@@ -1696,7 +1698,6 @@ containing a value of this type.
         public static final int never=0x7f05000b;
         public static final int none=0x7f050004;
         public static final int normal=0x7f050001;
-        public static final int numberPlayers=0x7f05004c;
         public static final int progress_circular=0x7f05001e;
         public static final int progress_horizontal=0x7f05001f;
         public static final int radio=0x7f05002d;
@@ -1717,8 +1718,8 @@ containing a value of this type.
         public static final int split_action_bar=0x7f05001b;
         public static final int submit_area=0x7f05003e;
         public static final int tabMode=0x7f050003;
-        public static final int teamName=0x7f05004a;
-        public static final int teamSigla=0x7f05004b;
+        public static final int teamName=0x7f05004b;
+        public static final int teamSigla=0x7f05004c;
         public static final int times=0x7f050044;
         public static final int title=0x7f050029;
         public static final int top=0x7f050015;
@@ -1784,9 +1785,10 @@ containing a value of this type.
         public static final int activity_splash_screen=0x7f030018;
         public static final int adapter_player=0x7f030019;
         public static final int adapter_team=0x7f03001a;
-        public static final int fragment_home=0x7f03001b;
-        public static final int fragment_players=0x7f03001c;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001d;
+        public static final int empty_list_view=0x7f03001b;
+        public static final int fragment_home=0x7f03001c;
+        public static final int fragment_players=0x7f03001d;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001e;
     }
     public static final class menu {
         public static final int global=0x7f0c0000;
@@ -1855,10 +1857,13 @@ containing a value of this type.
         public static final int hello_blank_fragment=0x7f0a0018;
         public static final int hello_world=0x7f0a001a;
         public static final int jo_o=0x7f0a0020;
+        public static final int jogador=0x7f0a0023;
+        public static final int n_mero=0x7f0a0025;
         public static final int navigation_drawer_close=0x7f0a0014;
         public static final int navigation_drawer_open=0x7f0a0013;
         public static final int nome_=0x7f0a001e;
         public static final int numero_de_jogadores_=0x7f0a001f;
+        public static final int posi_o=0x7f0a0024;
         public static final int sigla=0x7f0a001c;
         public static final int sigla_=0x7f0a001d;
         public static final int time=0x7f0a001b;

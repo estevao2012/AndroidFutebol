@@ -10,7 +10,8 @@
     -->
     <dimen name="navigation_drawer_width">240dp</dimen>
     <dimen name="margin_item_menu">10dp</dimen>
-    <dimen name="margin_item_adapter">20dp</dimen>
+    <dimen name="margin_item_adapter">10dp</dimen>
+    <dimen name="margin_header_adapter">10dp</dimen>
     <dimen name="margin_item_detail">5dp</dimen>
 
 </resources>

@@ -14,7 +14,7 @@
             android:orientation="horizontal" >
 
             <TextView
-                style="@style/itemDetailTeam.label"
+                style="@style/itemDetailTeam.label" 
                 android:text="@string/nome_" />
 
             <TextView
@@ -27,24 +27,11 @@
             android:orientation="horizontal" >
 
             <TextView
-                style="@style/itemDetailTeam.label"
+                style="@style/itemDetailTeam.label" 
                 android:text="@string/sigla_" />
 
             <TextView
                 android:id="@+id/teamSigla"
-                style="@style/itemDetailTeam" />
-        </LinearLayout>
-
-        <LinearLayout
-            style="@style/detailTeam"
-            android:orientation="horizontal" >
-
-            <TextView
-                style="@style/itemDetailTeam.label"
-                android:text="@string/numero_de_jogadores_" />
-
-            <TextView
-                android:id="@+id/numberPlayers"
                 style="@style/itemDetailTeam" />
         </LinearLayout>
 
@@ -55,15 +42,20 @@
 
             <TextView
                 style="@style/itemHeaderPlayerList"
-                android:text="Jogador" />
+                android:layout_weight="2.5"
+                android:text="@string/jogador" />
 
             <TextView
                 style="@style/itemHeaderPlayerList"
-                android:text="Posição" />
+                android:gravity="center"
+                android:layout_weight="0.75"
+                android:text="@string/posi_o" />
 
             <TextView
                 style="@style/itemHeaderPlayerList"
-                android:text="Número" />
+                android:gravity="right"
+                android:layout_weight="0.75"
+                android:text="@string/n_mero" />
         </LinearLayout>
     </LinearLayout>
 

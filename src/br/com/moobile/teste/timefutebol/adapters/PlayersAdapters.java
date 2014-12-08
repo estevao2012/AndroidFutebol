@@ -11,7 +11,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 import br.com.moobile.teste.timefutebol.R;
 import br.com.moobile.teste.timefutebol.models.Player;
-import br.com.moobile.teste.timefutebol.utils.ViewHelper;
+import br.com.moobile.teste.timefutebol.utils.views.ViewHelper;
 
 public class PlayersAdapters extends BaseAdapter {
 

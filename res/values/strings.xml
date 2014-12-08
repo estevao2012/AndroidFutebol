@@ -21,5 +21,8 @@
     <string name="jo_o">João</string>
     <string name="goleiro">Goleiro</string>
     <string name="_1">1</string>
+    <string name="jogador">Jogador</string>
+    <string name="posi_o">Posição</string>
+    <string name="n_mero">#</string>
 
 </resources>

@@ -4,6 +4,10 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
+    
+    
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="21" />
@@ -15,13 +19,13 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".views.HomeActivity"
+            android:name="br.com.moobile.teste.timefutebol.views.main.HomeActivity"
             android:label="@string/app_name" >
             <intent-filter> 
             </intent-filter>
         </activity>
         <activity
-            android:name="br.com.moobile.teste.timefutebol.views.SplashScreenActivity"
+            android:name="br.com.moobile.teste.timefutebol.views.splashscreen.SplashScreenActivity"
             android:label="@string/title_activity_splash_screen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

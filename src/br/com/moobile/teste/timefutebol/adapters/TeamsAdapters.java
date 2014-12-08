@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.DialogInterface.OnClickListener;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,7 +11,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 import br.com.moobile.teste.timefutebol.R;
 import br.com.moobile.teste.timefutebol.models.Team;
-import br.com.moobile.teste.timefutebol.utils.ViewHelper;
+import br.com.moobile.teste.timefutebol.utils.views.ViewHelper;
 
 public class TeamsAdapters extends BaseAdapter{
 
@@ -43,7 +41,7 @@ public class TeamsAdapters extends BaseAdapter{
 
 	@Override
 	public long getItemId(int position) { 
-		return position;
+		return getItem(position).getId();
 	}
 
 	@Override
@@ -52,8 +50,13 @@ public class TeamsAdapters extends BaseAdapter{
 			view = LayoutInflater.from(mContext).inflate(R.layout.adapter_team, parent, false); 
 		}
 		
-		TextView name = ViewHelper.get(view, R.id.txtName);
-		name.setText(getItem(position).toString()); 
+		Team team = getItem(position);
+		
+		TextView name = ViewHelper.get(view, R.id.txtName); 
+		name.setText(team.getName());
+		
+		TextView sigla = ViewHelper.get(view, R.id.txtSigla);
+		sigla.setText(team.getSigla());
 		
 		return view;
 	}
