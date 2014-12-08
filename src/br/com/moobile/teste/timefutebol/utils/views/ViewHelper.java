@@ -11,13 +11,13 @@ public class ViewHelper {
 	public static void abreFragment(FragmentManager fragmentManager, int layout, Fragment instranciaAlvo) {
 		FragmentTransaction ft = fragmentManager.beginTransaction();
 		ft.replace(layout, instranciaAlvo);
-		ft.addToBackStack(instranciaAlvo.getClass().getSimpleName());
-		ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+		ft.addToBackStack(instranciaAlvo.getClass().getSimpleName()); 
 		ft.commit();
 	}
 	
-	public static <T extends View> T get(View view, int id) {
-        SparseArray<View> viewHolder = (SparseArray<View>) view.getTag();
+	@SuppressWarnings("unchecked")
+	public static <T extends View> T get(View view, int id) { 
+		SparseArray<View> viewHolder = (SparseArray<View>) view.getTag();
         if (viewHolder == null) {
             viewHolder = new SparseArray<View>();
             view.setTag(viewHolder);

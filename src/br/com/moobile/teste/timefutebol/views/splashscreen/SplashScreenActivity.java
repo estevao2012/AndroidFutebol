@@ -4,8 +4,10 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import br.com.moobile.teste.timefutebol.R;
 import br.com.moobile.teste.timefutebol.utils.data.PreferencesWrapper;
+import br.com.moobile.teste.timefutebol.utils.rest.RestClient;
 import br.com.moobile.teste.timefutebol.views.main.HomeActivity;
 
 public class SplashScreenActivity extends Activity {
@@ -22,10 +24,9 @@ public class SplashScreenActivity extends Activity {
 		@Override
 		protected Void doInBackground(Void... params) {
 			try {
-				// Só pra fala que ta processando alguma coisa ,KKKK, SQN 
-//				TODO: Fazer requisição de token
 				Thread.sleep(1000);
-				PreferencesWrapper.put("token", "698dc19d489c4e4db73e28a713eab07b");
+				String token = RestClient.getApiService().register("testeste"); 
+				PreferencesWrapper.put("token", token);
 			} catch (InterruptedException e) { 
 				e.printStackTrace();
 			}
